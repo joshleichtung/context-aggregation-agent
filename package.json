@@ -1,0 +1,28 @@
+{
+  "name": "context-aggregation-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-assisted context aggregation agent with vector search and LLM summarization",
+  "keywords": ["context", "aggregation", "vector-search", "weaviate", "friendliai", "aci"],
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --parallel --stream dev",
+    "build": "pnpm --stream build",
+    "test": "pnpm --stream test",
+    "lint": "pnpm --stream lint",
+    "clean": "pnpm --recursive clean"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.0",
+    "typescript": "^5.2.2",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
