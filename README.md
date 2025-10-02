@@ -1,8 +1,15 @@
 # 🤖 Context Aggregation Agent
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue.svg)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black.svg)](https://nextjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18-green.svg)](https://nodejs.org/)
+
 > AI-powered context collection and summarization using vector search and LLM inference
 
 A hackathon-ready application that aggregates context from Slack, Google Docs, and web pages, stores it in a vector database, and generates intelligent summaries using state-of-the-art LLM technology.
+
+**GitHub**: [https://github.com/joshleichtung/context-aggregation-agent](https://github.com/joshleichtung/context-aggregation-agent)
 
 ## 🎯 Features
 
@@ -47,8 +54,8 @@ A hackathon-ready application that aggregates context from Slack, Google Docs, a
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
-cd weaveagent
+git clone https://github.com/joshleichtung/context-aggregation-agent.git
+cd context-aggregation-agent
 
 # Install dependencies
 pnpm install
