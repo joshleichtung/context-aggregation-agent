@@ -43,7 +43,14 @@ class WeaviateService {
           .withClass({
             class: this.CONTEXT_COLLECTION,
             description: 'Context items from various sources',
-            vectorizer: 'text2vec-transformers',
+            vectorizer: 'text2vec-weaviate',
+            moduleConfig: {
+              'text2vec-weaviate': {
+                model: 'ada',
+                modelVersion: '002',
+                type: 'text',
+              },
+            },
             properties: [
               {
                 name: 'sourceType',
@@ -99,7 +106,14 @@ class WeaviateService {
           .withClass({
             class: this.SUMMARY_COLLECTION,
             description: 'Generated summaries',
-            vectorizer: 'text2vec-transformers',
+            vectorizer: 'text2vec-weaviate',
+            moduleConfig: {
+              'text2vec-weaviate': {
+                model: 'ada',
+                modelVersion: '002',
+                type: 'text',
+              },
+            },
             properties: [
               {
                 name: 'topic',
